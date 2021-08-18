@@ -53,18 +53,18 @@ const Wrap = styled.div`
     border: 4px solid transparent;
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-    object-fit: cover;
     
-
+    
     &:hover{
-        border: 4px solid rgba(249, 249, 249, .8);
+      border: 4px solid rgba(249, 249, 249, .8);
     }
   }
   @media (max-width: 768px) {
-   height: 250px;
-   img{
-     grid-template-columns: repeat(1, minmax(0, 1fr));
-     object-position: 70% center;
+    height: 250px;
+    img{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      object-fit: cover;
+      object-position: 70% center;
     }
   }
 `;
